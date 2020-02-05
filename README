@@ -1,0 +1,10 @@
+Project:
+Given items in a fridge/pantry return possible meals app 
+
+Description: 
+When most kids go to college they leave with no experience cooking. They then either balloon up by eating cafeteria food and sweets or refuse to eat. There are also students who may want special diets that some colleges will not be able to support. Many colleges have access to good healthy produce but the students lack the knowledge of who to prepare them.
+
+To solve this we purpose the development of an App for android that can take the contents of a fridge or pantry and retrieve simple recipes. The user will put in what ingredients they have and our app will display a recipe with step by step instructions to prepare the food. The user will also be able to search for recipes and sort by ingredients, time to cook, serving size ext.
+
+Target Demographic:
+College students who do not know how to cook.
