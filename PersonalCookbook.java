@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class PersonalCookbook extends Recipe{
@@ -10,16 +11,29 @@ public class PersonalCookbook extends Recipe{
 	}
 	
 	// Methods
+
+	// Add recipe object to Recipe List
 	public void addRecipe(Recipe newRecipe){
 		recipeList.add(newRecipe);
 	}
 
+	// Remove recipe with specified name from recipelist in cookbook
 	public void removeRecipe(String recipeName){
-		recipeList.removeif(n -> n.name.equals(recipeName));	// Remove recipe with specified name from recipelist in cookbook
+		recipeList.removeIf(n -> n.name.equals(recipeName));
 	}
 
-	public Recipe getRecipe(String recipeName){
-		for()
+	// return Recipe object with specified name
+	public Recipe getRecipe(String recipeName){	
+		for(int i = 0; i < recipeList.size(); i++){
+			if (recipeList.get(i).name.equals(recipeName)){
+				return recipeList.get(i);
+			} 	
+		}
+		return null; // return null if specified recipe not found
 	}
 
+	// Return list of current recipes 
+	public void displayAll(){
+		return recipeList.toArray();
+	}
 }
